@@ -1,0 +1,25 @@
+# Big folders we never want to send into the build context
+node_modules
+dist
+
+# VCS + editor stuff
+.git
+.gitignore
+.vscode
+*.swp
+
+# Logs & caches
+*.log
+npm-debug.log*
+.yarn-cache
+.cache
+coverage
+
+# Local env files (don’t bake secrets into images)
+.env
+.env.local
+.env.*
+!.env.example  # keep a sample if you have one
+
+# Misc
+.DS_Store
